@@ -14,6 +14,8 @@ int main()
 
     for (ll i = 2; i < n; i++)
     {
+        if (cp[i])
+        {
             for (ll j = i * 2; j < n; j += i)
             {
                 cp[j] = false;
@@ -24,7 +26,7 @@ int main()
                     lp[j]=i;
                 }
             }
-        
+        }
     }
 
     int num;
