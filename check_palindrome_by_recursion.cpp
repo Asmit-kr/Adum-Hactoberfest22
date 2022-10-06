@@ -4,7 +4,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long int ull;
 
-char str[100000];
+char *str = (char *)malloc(sizeof(char));
 
 bool func(int i)
 {
