@@ -1,3 +1,5 @@
+import java.util.*;
+
 class RockPaperScissors
 {
     public static void print(int cc)
@@ -36,6 +38,13 @@ class RockPaperScissors
         Scanner sc = new Scanner(System.in);
         int uc = sc.nextInt();
         boolean flag1 = check(uc);
+
+        if(!flag1)
+        {
+            System.out.println("Enter Right Choice");
+        }
+        else
+        {
             int cc = rm.nextInt(1,4);
             print(cc);
 
@@ -51,6 +60,6 @@ class RockPaperScissors
             {
                 System.out.println("Computer won");
             }
-        
+        }
     }
 }
