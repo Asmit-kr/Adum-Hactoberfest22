@@ -1,21 +1,20 @@
 #include<stdio.h>
-#include<math.h>
-#include<string.h>
 
 int main()
 {
+    int n;
+    scanf("%d",&n);
+    int a[n], i, j, z;
 
-    int a[5], i, j, z;
-
-    for(i=0; i<5; i++)
+    for(i=0; i<n; i++)
     {
         scanf("%d",&a[i]);
     
     }
 
-    for(i=0; i<5; i++)
+    for(i=0; i<n; i++)
     {
-        for(j=i+1; j<5; j++)
+        for(j=i+1; j<n; j++)
         {
             if(a[i]>a[j])
             {
@@ -25,9 +24,6 @@ int main()
             }
         }
         printf("%d ",a[i]);
-        
     }
-
-
     return 0;
 }
